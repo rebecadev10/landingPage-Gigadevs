@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <nav class="bg-azul">
+      <nav class="bg-azul fixed">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div class="relative flex h-14 items-center justify-between">
             <div
@@ -24,17 +24,22 @@
             </div>
             <div class="flex justify-end space-x-4">
               <a
-                href=""
+                href="#inicio"
                 class="text-blanco text-sm font-bold hover:text-azul hover:bg-blanco rounded px-2 py-2"
                 >Inicio</a
               >
+              <a
+              href="#servicios"
+              class="text-blanco text-sm font-bold hover:text-azul hover:bg-blanco rounded px-2 py-2"
+              >Servicios</a
+            >
               <a
                 href=""
                 class="text-blanco text-sm font-bold hover:text-azul hover:bg-blanco rounded px-2 py-2"
                 >Planes</a
               >
               <a
-                href=""
+                href="#nosotros"
                 class="text-blanco text-sm font-bold hover:text-azul hover:bg-blanco rounded px-2 py-2"
                 >Nosotros</a
               >
@@ -48,7 +53,7 @@
         </div>
       </nav>
     </header>
-    <div class="flex w-full">
+    <div class="flex w-full" id="inicio">
       <img src="./img/relleno/1.jpg" alt="" class="w-full h-screen" />
       <div class="flex justify-center absolute h-full w-full items-center">
         <div
@@ -65,15 +70,18 @@
         </div>
       </div>
     </div>
-    <div class="flex flex-col justify-center items-center w-full space-y-4 bg-fondoClaro">
+    <div
+      class="flex flex-col justify-center items-center w-full space-y-4 bg-fondoClaro"
+    >
       <!-- <div class="flex flex-col bg-amarillo  items-center px-4 py-4"> -->
+      <div id="nosotros" class="flex flex-col items-center">
         <h2
-          class="flex font-bold text-negro items-center text-center text-2xl mt-4"
+          class="flex font-bold text-negro items-center text-center text-2xl mt-12 p-4"
         >
           QUIENES SOMOS ?
         </h2>
-        <div class="flex flex-row w-full px-4 items-center py-4">
-          <div class="w-1/2 px-8 ">
+        <div class="flex flex-row w-full px-4 items-center py-4 my-6">
+          <div class="w-1/2 px-8">
             <p>
               Somos un equipo de profesionales apasionados por la tecnología,
               dedicados al desarrollo de software, enfocados en brindar
@@ -83,54 +91,174 @@
               a nuestros clientes.
             </p>
           </div>
-          <div class="w-1/2 ">
-            <img src="./img/relleno/2.jpg" alt="" class="object-contain rounded-tl-lg rounded-bl-lg rounded-tr-[120px] rounded-br-[120px] drop-shadow-2xl" />
+          <div class="w-1/2">
+            <img
+              src="./img/relleno/2.jpg"
+              alt=""
+              class="object-contain rounded-tl-lg rounded-bl-lg rounded-tr-[120px] rounded-br-[120px] drop-shadow-2xl"
+            />
           </div>
-        <!-- </div> -->
-      </div>
-      <div class="flex flex-row w-full px-4 items-center bg-azul py-12 text-blanco">
-        <div class="w-1/2 px-8">
-          <img src="./img/relleno/3.jpg" alt="" class="object-contain rounded-tl-[120px] rounded-bl-[120px] rounded-tr-lg rounded-br-lg drop-shadow-2xlB" />
+          <!-- </div> -->
         </div>
-        <div class="w-1/2 px-8 items-center py-12">
-          <div class="w-20">
-          <h3 class="text-xl font-bold text-negro border-b-2 border-b-amarillo">Misión</h3>
-        </div>
-          <p class="mt-4">
-            Proporcionar soluciones tecnológicas innovadoras y de alta calidad a
-            nuestros clientes, a través del desarrollo de software personalizado
-            y servicios de tecnología de vanguardia
-          </p>
-        </div>
-      </div>
-      <div class="flex flex-row w-full px-4 items-center">
-        <div class="w-1/2 px-8 ">
-          <div class="w-20 items-end">
-            <h3 class="text-xl font-bold text-negro aling-right border-b-2  border-b-azul">Visión</h3>
+        <div
+          class="flex flex-row w-full px-4 items-center bg-azul py-12 text-blanco"
+        >
+          <div class="w-1/2 px-8">
+            <img
+              src="./img/relleno/3.jpg"
+              alt=""
+              class="object-contain rounded-tl-[120px] rounded-bl-[120px] rounded-tr-lg rounded-br-lg drop-shadow-2xlB"
+            />
           </div>
-          <p class="mt-4">
-            Convertirnos en el referente principal en el ámbito de desarrollo de
-            software en Venezuela, ofreciendo soluciones innovadoras y de alta
-            calidad a nuestros clientes. Así mismo ser reconocidos por nuestra
-            habilidad para transformar la presencia en línea de empresas y
-            emprendimientos, brindando páginas web atractivas, funcionales y a
-            la vanguardia tecnológica.
-          </p>
+          <div class="w-1/2 px-8 items-center py-12">
+            <div class="w-20">
+              <h3
+                class="text-xl font-bold text-negro border-b-2 border-b-amarillo"
+              >
+                Misión
+              </h3>
+            </div>
+            <p class="mt-4">
+              Proporcionar soluciones tecnológicas innovadoras y de alta calidad
+              a nuestros clientes, a través del desarrollo de software
+              personalizado y servicios de tecnología de vanguardia
+            </p>
+          </div>
         </div>
-        <div class="w-1/2 px-8">
-          <img src="./img/relleno/4.jpg" alt="" class="object-contain  rounded-tl-lg rounded-bl-lg rounded-tr-[120px] rounded-br-[120px] drop-shadow-2xl" />
+        <div class="flex flex-row w-full px-4 items-center my-8">
+          <div class="w-1/2 px-8">
+            <div class="w-20 items-end">
+              <h3
+                class="text-xl font-bold text-negro aling-right border-b-2 border-b-azul"
+              >
+                Visión
+              </h3>
+            </div>
+            <p class="mt-4">
+              Convertirnos en el referente principal en el ámbito de desarrollo
+              de software en Venezuela, ofreciendo soluciones innovadoras y de
+              alta calidad a nuestros clientes. Así mismo ser reconocidos por
+              nuestra habilidad para transformar la presencia en línea de
+              empresas y emprendimientos, brindando páginas web atractivas,
+              funcionales y a la vanguardia tecnológica.
+            </p>
+          </div>
+          <div class="w-1/2 px-8">
+            <img
+              src="./img/relleno/4.jpg"
+              alt=""
+              class="object-contain rounded-tl-lg rounded-bl-lg rounded-tr-[120px] rounded-br-[120px] drop-shadow-2xl"
+            />
+          </div>
         </div>
       </div>
+      <div class="flex flex-col items-center my-8" id="servicios">
+        <h2
+          class="flex font-bold text-negro items-center text-center text-2xl pt-8 "
+        >
+        ¿Qué hacemos?
+        </h2>
+        <div class="flex flex-row w-full items-center text-center justify-center text-lg
+         py-2 my-4 ">
+        <span class="text-azul">Somos especialistas,</span>
+         <p>  en todos estos servicios y muchos más</p>
+        </div>
+        <div class="w-full flex flex-row space-x-4  px-8">
+          <div class="w-1/3">
+            <div class="flex flex-col items-center ">
+              <img src="./img/GIGADEVS.png" alt="" class="object-cover rounded-t-lg">
+              <h4 class="text-lg text-center pt-4 font-bold">Desarrollo Web</h4>
+              <ul class="text-sm">
+                <li>Creacion de pagina web</li>
+                <li>Tiendas en linea | E=commerce</li>
+                <li>Actualización y rediseño de sitios web</li>
+               
+              </ul>
+            </div>
+          </div>
+          <div class="w-1/3">
+            <div class="flex flex-col items-center">
+              <img src="./img/GIGADEVS.png" alt="" class="object-cover rounded-t-lg">
+              <h4 class="text-lg text-center pt-4 font-bold">Maquetacion</h4>
+            </div>
+          </div>
+          <div class="w-1/3">
+            <div class="flex flex-col items-center">
+              <img src="./img/GIGADEVS.png" alt="" class="object-cover rounded-t-lg">
+              <h4 class="text-lg text-center pt-4 font-bold">SEO
+              </h4>
+            </div>
+          </div>
+        </div>
 
-      <h2>Como trabajamos?</h2>
-      <ul>
-        <li>1.Recopilacion de la informacion</li>
-        <li>2.Planificacion</li>
-        <li>3.Diseno</li>
-        <li>4.Maquetacion</li>
-        <li>5.Desarrollo</li>
-        <li>6.Prueba y lanzamiento</li>
-      </ul>
+      </div>
+      <div
+        class="bg-naranja flex w-full items-center justify-center text-center my-8"
+      >
+        <h2
+          class="flex font-bold text-negro items-center text-center text-2xl p-8 text-blanco"
+        >
+          Como trabajamos?
+        </h2>
+      </div>
+      <div class="flex flex-row justify-center items-center my-6">
+        <div class="w-1/3 flex flex-row">
+          <img
+            src="./img/relleno/5.png"
+            alt=""
+            class="w-90 object-contain drop-shadow-2xl"
+          />
+        </div>
+        <div class="w-1/3 flex flex-col space-y-8 ml-4">
+          <div class="flex flex-row items-center w-full ml-2 space-x-4">
+            <p
+              class="bg-amarillo text-blanco text-xl font-bold px-2 py rounded-full"
+            >
+              1
+            </p>
+            <span> Recopilacion de la informacion </span>
+          </div>
+          <div class="flex flex-row items-center w-full ml-8 space-x-4">
+            <p
+              class="bg-amarillo text-blanco text-xl font-bold px-2 py rounded-full"
+            >
+              2
+            </p>
+            <span> Planificacion </span>
+          </div>
+          <div class="flex flex-row items-center w-full ml-10 space-x-4">
+            <p
+              class="bg-amarillo text-blanco text-xl font-bold px-2 py rounded-full"
+            >
+              3
+            </p>
+            <span> Diseno y Maquetacion </span>
+          </div>
+          <div class="flex flex-row items-center w-full ml-8 space-x-4">
+            <p
+              class="bg-amarillo text-blanco text-xl font-bold px-2 py rounded-full"
+            >
+              4
+            </p>
+            <span> Desarrollo </span>
+          </div>
+          <div class="flex flex-row items-center w-full ml-2 space-x-4">
+            <p
+              class="bg-amarillo text-blanco text-xl font-bold px-2 py rounded-full"
+            >
+              5
+            </p>
+            <span> Prueba y lanzamiento </span>
+          </div>
+        </div>
+        <div class="w-1/3">
+          <img
+            src="./img/relleno/6.png"
+            alt=""
+            class="w-56 h-64 object-contain drop-shadow-2xl"
+          />
+        </div>
+      </div>
     </div>
   </body>
 </html>
